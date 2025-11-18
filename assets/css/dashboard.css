@@ -1,0 +1,33 @@
+/* =================================================================
+   /assets/css/dashboard.css
+   Minimal CSS untuk Fixed Sidebar Layout (Sesuai Contoh Bootstrap 3)
+   ================================================================= */
+
+/* 1. Sidebar: Mengatur posisi tetap dan offset dari navbar fixed */
+.sidebar {
+  position: fixed;
+  top: 51px; /* Jarak dari Navbar Fixed-Top (tinggi default navbar) */
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  display: block;
+  padding: 20px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: #f5f5f5; /* Background abu-abu seperti contoh */
+  border-right: 1px solid #eee;
+}
+
+/* 2. Konten Utama: Mengatur padding */
+.main {
+  padding: 20px;
+}
+
+/* 3. Penyesuaian jarak di layar desktop (lebar minimum 768px) */
+@media (min-width: 768px) {
+  /* Offset konten utama sebesar lebar sidebar di layout desktop */
+  .main {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}
